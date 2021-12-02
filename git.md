@@ -8,9 +8,6 @@
 > - git commit -am "MY FIRST COMMIT"
 
 
-> ### CREATE NEW LOCAL BRANCH
-> - git checkout -b "new_branch_name"
-
 > ### CUSTOM BRANCH MERGE TO MASTER BRANCH
 > [article](https://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff)
 > 
@@ -31,3 +28,9 @@
 
 > ### DELETE REMOTE BRANCH
 > - git push origin --delete "branch_name"
+
+> ### CREATE LOCAL BRANCH
+> - git checkout -b "branch_name"
+
+> ### CREATE REMOTE BRANCH
+> - git push -u origin "branch_name"

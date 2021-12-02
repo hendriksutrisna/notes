@@ -54,6 +54,13 @@
 >
 > Are you sure you want to continue? [y/N]
 
+### Delete all the images
+> PS C:\Data\Coding\git\personal\notes> docker image prune -a
+> 
+> WARNING! This will remove all images without at least one container associated to them.
+> 
+> Are you sure you want to continue? [y/N] 
+
 ### docker stop & docker kill
 > #### use SIGTERM
 > will wait for 10 seconds to terminate the id
