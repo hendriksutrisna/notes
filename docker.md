@@ -89,3 +89,16 @@ Execute an additional command in a container
 > docker compose up
 >
 > docker compose down
+
+### Volume & Bind Mount
+> Anonymous volume
+> 
+> - docker run -v /app/data
+> 
+> Named volume
+> 
+> - docker run -v data:/app/data
+> 
+> Bind Mount
+> 
+> - docker run -v /path/to/code:/app/data
