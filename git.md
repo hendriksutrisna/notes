@@ -21,7 +21,7 @@
 
 > ### DICARD ALL LOCAL COMMITS ON THIS BRANCH
 > In order to discard all local commits on this branch, to make the local branch identical to the "upstream" of this branch, simply run 
-> - git reset --hard @{u}
+> - git reset --hard origin/<branch_name>
 
 > ### DELETE LOCAL BRANCH
 > - git branch -d "branch_name"
@@ -34,3 +34,26 @@
 
 > ### CREATE REMOTE BRANCH
 > - git push -u origin "branch_name"
+
+
+### GIT STASH ([source](https://www.atlassian.com/git/tutorials/saving-changes/git-stash))
+
+Git stash takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy
+> ### VIEW
+> - git stash list
+> - git stash show
+
+> ### STASHING UNTRACKED or IGNORED FILES
+> Adding the -u option (or --include-untracked) tells git stash to also stash your untracked files
+> - git stash -u
+> 
+> include changes to ignored files as well
+> - git stash -a
+
+> ### SAVE
+> it's good practice to annotate your stashes with a description
+> - git stash save "your message"
+
+> ### RE-APPLYING OUR CHANGES
+> reapply previously stashed changes
+> - git stash pop
